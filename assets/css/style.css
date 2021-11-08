@@ -44,10 +44,11 @@ body {
 ##################################
 */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 95%;
-  margin: 0 auto -80vh auto;
+  right: 1%;
+  left: 1%;
 }
 /* 
 # # # # # # # # # # # # # # 
@@ -248,10 +249,18 @@ main section p {
   margin: 0;
 }
 .mainShop button {
+  padding: 2% 4%;
+  background-color: #ebccc2;
+  display: block;
+  border: none;
+  margin: 1% auto;
+}
+.mainShop section button:hover {
+  cursor: pointer;
 }
 /* 
 # # # # # # # # # # # # # # 
-        SHOP
+        Inspiration
 # # # # # # # # # # # # # # 
 */
 .mainInspiration section video {
