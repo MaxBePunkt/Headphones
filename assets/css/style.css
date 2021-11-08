@@ -48,7 +48,7 @@ header {
   top: 0;
   width: 95%;
   right: 1%;
-  left: 1%;
+  left: 2%;
 }
 /* 
 # # # # # # # # # # # # # # 
@@ -85,20 +85,22 @@ nav ul a:hover {
   border-bottom: 1px solid rgb(234, 204, 194);
 }
 
-header aside ul li {
+aside ul li {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-header aside {
-  height: 85vh;
-  display: flex;
+aside {
+  height: 100 vh;
+  position: fixed;
+  top: 30vh;
+  left: 2%;
 }
-header aside ul {
+aside ul {
   justify-content: start;
 }
-header aside ul li a {
+aside ul li a {
   margin-left: 5%;
   font-size: 0.8rem;
 }
@@ -145,8 +147,9 @@ aside ul li a:hover {
         index
 # # # # # # # # # # # # # # 
 */
-main section {
+.indexMain section {
   flex-wrap: wrap;
+  margin-top: 10%;
 }
 .indexMain section:first-of-type img {
   width: 100%;
@@ -248,14 +251,15 @@ main section p {
 .mainShop section h2 {
   margin: 0;
 }
-.mainShop button {
+.buttonBuy {
   padding: 2% 4%;
   background-color: #ebccc2;
   display: block;
   border: none;
   margin: 1% auto;
+  z-index: 100;
 }
-.mainShop section button:hover {
+.buttonBuy:hover {
   cursor: pointer;
 }
 /* 
@@ -263,6 +267,9 @@ main section p {
         Inspiration
 # # # # # # # # # # # # # # 
 */
+.mainInspiration {
+  margin-top: 10%;
+}
 .mainInspiration section video {
   width: 90%;
   margin: 0 auto 15% auto;
